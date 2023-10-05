@@ -12,11 +12,25 @@
         android:theme="@style/Theme.Catwell"
         tools:targetApi="31">
         <activity
+            android:name=".PaymentActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".HistoryConsultationDetailActivity"
+            android:label="History Consultation Detail">
+        </activity>
+
+        <activity
+            android:name=".ScheduleConsultationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DoctorDetailActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
