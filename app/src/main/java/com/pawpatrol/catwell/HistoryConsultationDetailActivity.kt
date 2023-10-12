@@ -34,12 +34,12 @@ class HistoryConsultationDetailActivity : AppCompatActivity() {
         }
 
         btNewSchedule.setOnClickListener {
-            val intent = Intent(this, ScheduleConsultationActivity::class.java)
+            val intent = Intent(this, register::class.java)
             startActivity(intent)
         }
 
         btConsultationHistory.setOnClickListener {
-            val intent = Intent(this, PaymentActivity::class.java)
+            val intent = Intent(this, Login::class.java)
             startActivity(intent)
         }
 

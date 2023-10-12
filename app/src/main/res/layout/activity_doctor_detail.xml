@@ -37,7 +37,7 @@
             <androidx.cardview.widget.CardView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="8dp"
                 android:layout_gravity="center"
                 app:cardCornerRadius="6dp">
 
@@ -137,13 +137,13 @@
             <Button
                 android:id="@+id/bt_consultation"
                 android:layout_width="350dp"
-                android:layout_height="wrap_content"
+                android:layout_height="60dp"
+                android:textSize="20sp"
                 android:layout_gravity="center_horizontal"
-                android:layout_marginTop="130dp"
+                android:layout_marginTop="48dp"
                 android:backgroundTint="#F28705"
-                android:textColor="@color/white"
                 android:text="Konsultasi"
-                />
+                android:textColor="@color/white" />
         </LinearLayout>
 
 

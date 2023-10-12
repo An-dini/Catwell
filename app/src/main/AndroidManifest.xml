@@ -14,12 +14,16 @@
         <activity
             android:name=".PaymentActivity"
             android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="false" />
+        <activity
+            android:name=".register"
+            android:exported="false" />
 
         <activity
             android:name=".HistoryConsultationDetailActivity"
-            android:label="History Consultation Detail">
-        </activity>
-
+            android:label="History Consultation Detail"></activity>
         <activity
             android:name=".ScheduleConsultationActivity"
             android:exported="false" />
@@ -28,9 +32,14 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

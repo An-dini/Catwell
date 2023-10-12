@@ -17,6 +17,8 @@ class TransactionListAdapter(private val transactions: List<Transaction>, privat
         return ViewHolder(binding)
     }
 
+    override fun getItemCount(): Int = transactions.size
+
     override fun onBindViewHolder(holder: ViewHolder, position: Int)
     {
         with(holder){
@@ -31,8 +33,6 @@ class TransactionListAdapter(private val transactions: List<Transaction>, privat
             }
         }
     }
-
-    override fun getItemCount(): Int = transactions.size
 }
 
 

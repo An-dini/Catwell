@@ -6,5 +6,9 @@
     <color name="orange">#F28705</color>
     <color name="grey">#F2F0E4</color>
     <color name="nayv">#3F3D56</color>
+    <color name="PrimaryColor">#F25C05 </color>
+    <color name="SecondaryColor">#F28705 </color>
+    <color name="BackgroundColor">#F2F0E4 </color>
+    <color name="transparan">#80FFFFFF </color>
 
 </resources>

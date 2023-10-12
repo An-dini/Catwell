@@ -10,12 +10,21 @@
     <style name="SmallRatingBar">
         <item name="android:scaleX">0.4</item>
         <item name="android:scaleY">0.4</item>
+        <item name="colorControlActivated">@color/orange</item>
     </style>
+
+    <style name="OrangeRatingBar">
+        <item name="colorControlActivated">@color/orange</item>
+    </style>
+
+
 
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
+
+
 
     <style name="AppBottomNavigation" parent="Widget.MaterialComponents.BottomNavigationView">
         <item name="labelVisibilityMode">labeled</item>
