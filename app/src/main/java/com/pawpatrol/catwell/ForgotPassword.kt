@@ -1,4 +1,4 @@
-package com.example.register
+package com.pawpatrol.catwell
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

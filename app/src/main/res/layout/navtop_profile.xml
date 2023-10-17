@@ -4,14 +4,14 @@
     android:layout_width="match_parent"
     android:layout_height="104dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="@drawable/imgprofile"
+    android:background="@drawable/base_orange"
     android:padding="16dp">
 
     <ImageButton
         android:id="@+id/btPrev"
         android:layout_width="25dp"
         android:layout_height="25dp"
-        android:src="@drawable/ic_back"
+        android:src="@drawable/ic_left"
         android:background="@android:color/transparent"
         tools:ignore="MissingConstraints" />
 
@@ -22,7 +22,7 @@
         android:layout_marginStart="8dp"
         android:fontFamily="@font/poppinsbold"
         android:text="Profile"
-        android:textColor="@color/White"
+        android:textColor="@color/white"
         android:textSize="24sp"
         app:layout_constraintStart_toEndOf="@+id/btPrev"
         tools:layout_editor_absoluteY="0dp"
@@ -33,7 +33,7 @@
         android:layout_height="wrap_content"
         android:text="Info profil kamu"
         android:textStyle="italic"
-        android:textColor="@color/White"
+        android:textColor="@color/white"
         android:textSize="14sp"
         android:layout_marginStart="8dp"
         app:layout_constraintStart_toEndOf="@+id/btPrev"
