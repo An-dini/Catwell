@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here -->
         <item name="colorPrimary">@color/orange</item>
         <item name="colorPrimaryDark">@color/black</item>
         <item name="colorAccent">@color/white</item>
+        <item name="actionOverflowButtonStyle">@style/MyOverflowButtonStyle</item>
+    </style>
+
+    <style name="MyOverflowButtonStyle" parent="Widget.AppCompat.ActionButton.Overflow">
+        <item name="android:tint">#fff</item>
     </style>
 
     <style name="SmallRatingBar">
@@ -18,16 +23,28 @@
     </style>
 
 
-
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
 
-
-
     <style name="AppBottomNavigation" parent="Widget.MaterialComponents.BottomNavigationView">
         <item name="labelVisibilityMode">labeled</item>
+    </style>
+
+    <style name="whiteText" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name= "android:textStyle">bold</item>
+        <item name="android:textColor">#ffffff</item>
+    </style>
+
+    <style name="TextAppearance.AppCompat.Widget.ActionBar.Title." parent="@android:style/TextAppearance">
+        <item name="android:fontFamily">@font/poppinsbold</item>
+    </style>
+
+    <style name="ToolBarThemeToolBarStyle" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:textColorPrimary">@android:color/white</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:textColorPrimaryInverse">#fff</item>
     </style>
 
 </resources>
