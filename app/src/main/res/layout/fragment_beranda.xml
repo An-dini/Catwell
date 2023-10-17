@@ -15,51 +15,6 @@
         android:layout_height="104dp"
         app:layout_constraintTop_toTopOf="parent" />
 
-
-<!--    <androidx.appcompat.widget.AppCompatImageView-->
-<!--        android:id="@+id/notifikasi"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="104dp"-->
-<!--        android:padding="10dp"-->
-<!--        android:src="@drawable/img_notifikasi"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="0.642"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        app:layout_constraintVertical_bias="0.011" />-->
-
-<!--    <androidx.appcompat.widget.AppCompatImageView-->
-<!--        android:id="@+id/bookmark"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="104dp"-->
-<!--        android:padding="10dp"-->
-<!--        android:src="@drawable/img_bookmark"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="0.779"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        app:layout_constraintVertical_bias="0.011" />-->
-
-<!--    <androidx.appcompat.widget.AppCompatImageView-->
-<!--        android:id="@+id/profile"-->
-<!--        android:layout_width="wrap_content"-->
-<!--        android:layout_height="61dp"-->
-<!--        android:padding="10dp"-->
-<!--        android:src="@drawable/profile"-->
-<!--        app:layout_constraintBottom_toBottomOf="parent"-->
-<!--        app:layout_constraintEnd_toEndOf="parent"-->
-<!--        app:layout_constraintHorizontal_bias="1.0"-->
-<!--        app:layout_constraintStart_toStartOf="parent"-->
-<!--        app:layout_constraintTop_toTopOf="parent"-->
-<!--        app:layout_constraintVertical_bias="0.043" />-->
-
-
-
-
-
-
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView3"
         android:layout_width="match_parent"
