@@ -19,6 +19,30 @@
         <activity
             android:name=".AddressListActivity"
             android:exported="false" />
+      <activity
+            android:name=".SplashActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Detail_Event"
+            android:exported="false" />
+        <activity
+            android:name=".DetailArtikel"
+            android:exported="false" />
+        <activity
+            android:name=".Detail_Vet_Psw"
+            android:exported="false" />
+        <activity
+            android:name=".OtpPassword"
+            android:exported="false" />
+        <activity
+            android:name=".EditProfile"
+            android:exported="false" />
+        <activity
+            android:name=".ForgotPassword"
+            android:exported="false" />
+        <activity
+            android:name=".EditPassword"
+            android:exported="false" />
         <activity
             android:name=".Bookmark"
             android:exported="false" />
@@ -52,7 +76,7 @@
             android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".SplashActivity"
+            android:name=".Info_Vet_Psw"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
