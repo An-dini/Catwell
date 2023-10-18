@@ -33,7 +33,7 @@ class VetFragment : Fragment() {
     private fun setupRecyclerView() {
         val vetDataList = generateVetDataList()
         adapter = VetAdapter(vetDataList) { vetData ->
-            val intent = Intent(requireContext(), DoctorDetailActivity::class.java)
+            val intent = Intent(requireContext(), Detail_Vet_Psw::class.java)
             intent.putExtra(VET_ID_EXTRA, vetData.id)
             startActivity(intent)
         }
@@ -46,9 +46,9 @@ class VetFragment : Fragment() {
     private fun generateVetDataList(): List<VetData> {
         val vetDataList = mutableListOf<VetData>()
 
-        vetDataList.add(VetData(R.drawable.torovet, "Nama Dokter 1", "Deskripsi Dokter 1"))
-        vetDataList.add(VetData(R.drawable.bvc, "Nama Dokter 2", "Deskripsi Dokter 2"))
-        vetDataList.add(VetData(R.drawable.brunopetclinic, "Nama Dokter 3", "Deskripsi Dokter 3"))
+        vetDataList.add(VetData(R.drawable.torovet, "Toro Vet Clinic", "Alamat:Jl. Taman Palem Lestari, RW.13, Cengkareng Bar., Kecamatan Cengkareng, Kota Jakarta Barat, Daerah Khusus Ibukota "))
+        vetDataList.add(VetData(R.drawable.bvc, "OJ Pet Care", "Alamat:Ruko Tisenia (Tiban Sentra Niaga), Blok E No, RT.5/RW.6, Tiban Lama, Sekupang, Batam City, Riau Islands 29427"))
+        vetDataList.add(VetData(R.drawable.brunopetclinic, "Bruno Pet Clinic", "Alamat: Bruno Pet Clinic, Jalan Teratai 2 No.4, Lubuk Baja Kota, Kec. Lubuk Baja, Kota Batam, Kepulauan Riau 29432"))
 
         return vetDataList
     }
