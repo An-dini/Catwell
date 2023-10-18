@@ -129,13 +129,10 @@ class BerandaFragment : Fragment() {
                 true
             }
             R.id.action_profile -> {
-                Toast.makeText(requireContext(), "Profile", Toast.LENGTH_SHORT).show()
+                startActivity(Intent(requireContext(), Profile::class.java))
                 true
             }
-            R.id.produk1 -> {
-                startActivity(Intent(requireContext(), HalamanProduk::class.java))
-                true
-            }
+
             else -> super.onOptionsItemSelected(item)
         }
     }
