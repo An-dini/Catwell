@@ -44,7 +44,9 @@ class Info_Vet_Psw : AppCompatActivity() {
 
         binding.btnVet.setOnClickListener { replaceFragment(VetFragment()) }
         binding.btnPsw.setOnClickListener { replaceFragment(PswFragment()) }
+
     }
+
 
     private fun replaceFragment(fragment: Fragment) {
         val fragmentManager = supportFragmentManager
