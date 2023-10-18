@@ -23,7 +23,32 @@
             android:name=".Reply_Diskusi"
             android:exported="false" />
         <activity
+<<<<<<< refs/remotes/origin/beranda
             android:name=".Bookmark"
+=======
+            android:name=".AddressListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Detail_Event"
+            android:exported="false" />
+        <activity
+            android:name=".DetailArtikel"
+            android:exported="false" />
+        <activity
+            android:name=".Info_Vet_Psw"
+            android:exported="false" />
+        <activity
+            android:name=".OtpPassword"
+            android:exported="false" />
+        <activity
+            android:name=".EditProfile"
+            android:exported="false" />
+        <activity
+            android:name=".ForgotPassword"
+>>>>>>> local
             android:exported="false" />
         <activity
             android:name=".notifikasi"
