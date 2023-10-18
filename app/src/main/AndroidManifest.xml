@@ -28,6 +28,7 @@
         <activity
             android:name=".HapusAkun"
             android:exported="false" />
+
         <activity
             android:name=".EditAddressActivity"
             android:exported="false" />

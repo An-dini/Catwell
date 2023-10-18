@@ -24,7 +24,4 @@
         android:title="profile"
         app:showAsAction="always" />
 
-    <item
-        android:id="@+id/produk1"
-        android:title="Rekomendasi Produk 1" />
 </menu>

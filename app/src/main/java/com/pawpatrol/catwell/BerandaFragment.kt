@@ -5,8 +5,11 @@ import android.graphics.Typeface
 import android.net.Uri
 import android.os.Build
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.text.Html
 import android.util.LayoutDirection
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.Menu
@@ -29,6 +32,9 @@ class BerandaFragment : Fragment() {
     private val list = ArrayList<SliderData>()
     private lateinit var dots: ArrayList<TextView>
 
+    private lateinit var handler: Handler
+    private lateinit var runnable: Runnable
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setHasOptionsMenu(true)
@@ -42,6 +48,18 @@ class BerandaFragment : Fragment() {
         (activity as AppCompatActivity).supportActionBar
 
         binding = FragmentBerandaBinding.inflate(inflater, container, false)
+
+        handler = Handler(Looper.getMainLooper())
+        runnable = object : Runnable {
+            var index = 0
+            override fun run() {
+                if(index == list.size)
+                    index= 0
+                binding.viewPager.setCurrentItem(index)
+                index++
+                handler.postDelayed(this, 3000)
+            }
+        }
 
 
 
@@ -81,7 +99,6 @@ class BerandaFragment : Fragment() {
             }
         })
 
-
 //        Artikel
 
         binding.article1.setOnClickListener {
@@ -114,6 +131,10 @@ class BerandaFragment : Fragment() {
 
 
 //        Produk
+
+        binding.tvProduct.setOnClickListener {
+            startActivity(Intent(requireContext(), HalamanProduk::class.java))
+        }
 
         binding.produk1.setOnClickListener {
             val uri = Uri.parse("https://shopee.co.id/product/326441654/6659182921") // Gantilah URL dengan URL produk Tokopedia yang sesuai
@@ -165,6 +186,19 @@ class BerandaFragment : Fragment() {
             binding.dotsIndicator.addView(dots[i])
         }
     }
+
+    // Auto Slider
+    override fun onStart() {
+        super.onStart()
+        handler.post(runnable)
+
+    }
+
+    override fun onStop() {
+        super.onStop()
+        handler.removeCallbacks(runnable)
+    }
+
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
