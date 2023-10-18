@@ -41,6 +41,8 @@
             android:layout_height="50dp"
             android:background="@drawable/border_text"
             android:hint="Username"
+            android:textColorHint="#B2B4B6"
+            android:textColor="@color/black"
             android:paddingLeft="10dp"
             android:id="@+id/username"
             android:fontFamily="@font/poppinsregular"/>
@@ -50,6 +52,8 @@
             android:layout_height="50dp"
            android:background="@drawable/border_text"
             android:hint="Password"
+            android:textColorHint="#B2B4B6"
+            android:textColor="@color/black"
             android:inputType="textPassword"
             android:paddingLeft="10dp"
             android:id="@+id/passwd"
