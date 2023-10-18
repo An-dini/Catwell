@@ -19,9 +19,9 @@
         <activity
             android:name=".notifikasi"
             android:exported="false" />
-        <activity
-            android:name=".ImageSlider"
-            android:exported="false" />
+<!--        <activity-->
+<!--            android:name=".ImageSlider"-->
+<!--            android:exported="false" />-->
         <activity
             android:name=".PaymentActivity"
             android:exported="false" />
@@ -32,8 +32,11 @@
             android:name=".register"
             android:exported="false" />
         <activity
+            android:name=".ChatLogActivity"
+            android:exported="false" />
+        <activity
             android:name=".HistoryConsultationDetailActivity"
-            android:label="History Consultation Detail" />
+            android:exported="false"/>
         <activity
             android:name=".ScheduleConsultationActivity"
             android:exported="false" />

@@ -55,7 +55,7 @@
             android:layout_height="50dp"
             android:background="@drawable/button_shape"
             android:layout_marginEnd="50dp"
-            android:textColor="@color/White"
+            android:textColor="@color/white"
             android:text="Iya"
             android:textAllCaps="false"/>
         <Button
@@ -64,7 +64,7 @@
             android:background="@drawable/button_shape"
             android:text="Tidak"
             android:textAllCaps="false"
-            android:textColor="@color/White"/>
+            android:textColor="@color/white"/>
     </LinearLayout>
 
 

@@ -1,4 +1,4 @@
-package com.pawpatrol.catwell
+package com.pawpatrol.catwell.data
 
 var doctorList = mutableListOf<Doctor>()
 
