@@ -1,7 +1,7 @@
 package com.pawpatrol.catwell.data
 
 
-var pswlist = mutableListOf<VetData>()
+var pswlist = mutableListOf<PswData>()
 
 val PSW_ID_EXTRA = "pswExtra"
 data class PswData(
