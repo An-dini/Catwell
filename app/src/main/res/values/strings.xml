@@ -105,19 +105,6 @@
     <string name="doctor_schedule">08:00 - 22:00</string>
     <string name="doctor_duration">60</string>
 
-
-    <!--    <string-array name="doctor_price">-->
-    <!--        <item>130.000</item>-->
-    <!--    </string-array>-->
-
-    <!--    <string-array name="doctor_schedule">-->
-    <!--        <item>08:00 - 22:00</item>-->
-    <!--    </string-array>-->
-
-    <!--    <string-array name="doctor_duration">-->
-    <!--        <item>60 Menit</item>-->
-    <!--    </string-array>-->
-
     <string-array name="doctor_rating">
         <item>4.5</item>
         <item>5</item>
@@ -132,4 +119,63 @@
         <item>5</item>
         <item>5</item>
     </string-array>
+
+    <!--    data address-->
+    <string-array name="place_name">
+        <item>Rumah</item>
+        <item>Apartemen</item>
+        <item>Sekolah</item>
+        <item>Kantor</item>
+        <item>Rumah Ibu</item>
+    </string-array>
+
+    <string-array name="name_person">
+        <item>Ruhi</item>
+        <item>Wawan</item>
+        <item>Nur</item>
+        <item>Budi</item>
+        <item>Jiya</item>
+    </string-array>
+
+    <string-array name="phone_number">
+        <item>12345678123</item>
+        <item>32178439232</item>
+        <item>12428012429</item>
+        <item>12149179481</item>
+        <item>12401094754</item>
+    </string-array>
+
+    <string-array name="province">
+        <item>Jawa Barat</item>
+        <item>Jakarta</item>
+        <item>Jawa Timur</item>
+        <item>Bengkulu</item>
+        <item>Sumatra Selatan</item>
+    </string-array>
+
+    <string-array name="city">
+        <item>Bandung</item>
+        <item>Jakarta Barat</item>
+        <item>Malang</item>
+        <item>Sabang</item>
+        <item>Palembang</item>
+    </string-array>
+
+    <string-array name="street">
+        <item>Jalan Ahmad Yani</item>
+        <item>Jalan Senopati</item>
+        <item>Jalan Ngagel</item>
+        <item>Jalan H.R Rasuna Said</item>
+        <item>Jalan R.A Kartini</item>
+    </string-array>
+
+    <string-array name="setting_default">
+        <item>true</item>
+        <item>else</item>
+        <item>else</item>
+        <item>true</item>
+        <item>else</item>
+    </string-array>
+
+
 </resources>
