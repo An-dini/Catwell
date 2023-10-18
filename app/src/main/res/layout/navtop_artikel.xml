@@ -8,7 +8,7 @@
     android:padding="16dp">
 
     <ImageButton
-        android:id="@+id/ic_back"
+        android:id="@+id/btPrev"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:src="@drawable/ic_back"
@@ -25,7 +25,7 @@
         android:textColor="@color/white"
         android:textSize="24sp"
         android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/ic_back"
+        app:layout_constraintStart_toEndOf="@+id/btPrev"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteY="-1dp" />
 
@@ -33,7 +33,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        app:layout_constraintStart_toEndOf="@+id/ic_back"
+        app:layout_constraintStart_toEndOf="@+id/btPrev"
         android:text="Edukasi untuk kamu"
         android:textColor="@color/white"
         android:textSize="14sp"
