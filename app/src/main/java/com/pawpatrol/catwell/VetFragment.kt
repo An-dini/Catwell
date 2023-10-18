@@ -1,44 +1,55 @@
 package com.pawpatrol.catwell
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.recyclerview.widget.RecyclerView
-//import com.pawpatrol.catwell.adapter.VetAdapter
-//import com.example.infopswvet.Data.VetData
+import androidx.recyclerview.widget.GridLayoutManager
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.pawpatrol.catwell.data.VET_ID_EXTRA
 import com.pawpatrol.catwell.data.VetData
-import java.util.ArrayList
+import com.pawpatrol.catwell.databinding.FragmentVetBinding
 
 class VetFragment : Fragment() {
 
+    private lateinit var binding: FragmentVetBinding
     private lateinit var adapter: VetAdapter
-    private lateinit var recyclerView: RecyclerView
-    private lateinit var vetdata: List<VetData>
-
-    lateinit var image: List<Int>
-    lateinit var namavet: List<String>
-    lateinit var deskripsi: List<String>
-
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_vet, container, false)
-    }
-    private fun dataInitialize(){
-        vetdata = listOf<VetData>()
-        image = listOf(
-            R.drawable.torovet,
-            R.drawable.bvc,
-            R.drawable.brunopetclinic,
-        )
-//        namavet = listOf(
-//            getString(R.string.lorem_ipsum)
-//        )
+        binding = FragmentVetBinding.inflate(inflater, container, false)
+        return binding.root
     }
 
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        setupRecyclerView()
+    }
+
+    private fun setupRecyclerView() {
+        val vetDataList = generateVetDataList()
+        adapter = VetAdapter(vetDataList) { vetData ->
+            val intent = Intent(requireContext(), DoctorDetailActivity::class.java)
+            intent.putExtra(VET_ID_EXTRA, vetData.id)
+            startActivity(intent)
+        }
+
+        binding.recyclerView.layoutManager = LinearLayoutManager(requireContext())
+        binding.recyclerView.adapter = adapter
+    }
+
+
+    private fun generateVetDataList(): List<VetData> {
+        val vetDataList = mutableListOf<VetData>()
+
+        vetDataList.add(VetData(R.drawable.torovet, "Nama Dokter 1", "Deskripsi Dokter 1"))
+        vetDataList.add(VetData(R.drawable.bvc, "Nama Dokter 2", "Deskripsi Dokter 2"))
+        vetDataList.add(VetData(R.drawable.brunopetclinic, "Nama Dokter 3", "Deskripsi Dokter 3"))
+
+        return vetDataList
+    }
 }

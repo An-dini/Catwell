@@ -1,6 +1,6 @@
 package com.pawpatrol.catwell
 
-import com.example.infopswvet.Data.VetData
+import com.pawpatrol.catwell.data.VetData
 
 interface VetClickListener
 {
