@@ -20,6 +20,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="72dp"
         app:cardCornerRadius="12dp"
+        app:cardBackgroundColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -66,6 +67,7 @@
                 android:layout_height="50dp"
                 android:layout_marginTop="5dp"
                 android:textSize="20sp"
+                android:textColor="@color/black"
                 android:layout_centerHorizontal="true"
                 android:background="@drawable/border_text"
                 android:inputType="textPersonName"
@@ -91,6 +93,7 @@
                 android:background="@drawable/border_text"
                 android:fontFamily="@font/poppinsregular"
                 android:inputType="text"
+                android:textColor="@color/black"
                 android:layout_centerHorizontal="true"/>
 
             <TextView
@@ -112,6 +115,7 @@
                 android:layout_centerHorizontal="true"
                 android:inputType="number"
                 android:paddingLeft="10dp"
+                android:textColor="@color/black"
                 android:layout_marginTop="5dp"
                 android:id="@+id/edt_nohp"
                 android:fontFamily="@font/poppinsregular"/>

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".DetailArtikel">
 
     <include
@@ -19,6 +20,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="72dp"
         android:layout_marginBottom="50dp"
+        app:cardBackgroundColor="@color/white"
         app:cardCornerRadius="12dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

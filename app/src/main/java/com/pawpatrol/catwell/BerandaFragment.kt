@@ -2,6 +2,7 @@ package com.pawpatrol.catwell
 
 import android.content.Intent
 import android.graphics.Typeface
+import android.net.Uri
 import android.os.Build
 import android.os.Bundle
 import android.text.Html
@@ -79,6 +80,64 @@ class BerandaFragment : Fragment() {
             }
         })
 
+
+//        Artikel
+
+        binding.article1.setOnClickListener {
+            startActivity(Intent(requireContext(), DetailArtikel::class.java))
+        }
+
+        binding.article2.setOnClickListener {
+            startActivity(Intent(requireContext(), DetailArtikel::class.java))
+        }
+
+        binding.article3.setOnClickListener {
+            startActivity(Intent(requireContext(), DetailArtikel::class.java))
+        }
+
+        binding.article4.setOnClickListener {
+            startActivity(Intent(requireContext(), DetailArtikel::class.java))
+        }
+
+        binding.article5.setOnClickListener {
+            startActivity(Intent(requireContext(), DetailArtikel::class.java))
+        }
+
+        binding.article6.setOnClickListener {
+            startActivity(Intent(requireContext(), DetailArtikel::class.java))
+        }
+
+        binding.article7.setOnClickListener {
+            startActivity(Intent(requireContext(), DetailArtikel::class.java))
+        }
+
+
+//        Produk
+
+        binding.produk1.setOnClickListener {
+            val uri = Uri.parse("https://shopee.co.id/product/326441654/6659182921") // Gantilah URL dengan URL produk Tokopedia yang sesuai
+            val intent = Intent(Intent.ACTION_VIEW, uri)
+            startActivity(intent)
+        }
+
+        binding.produk2.setOnClickListener {
+            val uri = Uri.parse("https://shopee.co.id/product/75911202/1320846879") // Gantilah URL dengan URL produk Tokopedia yang sesuai
+            val intent = Intent(Intent.ACTION_VIEW, uri)
+            startActivity(intent)
+        }
+
+        binding.produk3.setOnClickListener {
+            val uri = Uri.parse("https://shopee.co.id/product/53852489/16165863544") // Gantilah URL dengan URL produk Tokopedia yang sesuai
+            val intent = Intent(Intent.ACTION_VIEW, uri)
+            startActivity(intent)
+        }
+
+        binding.produk4.setOnClickListener {
+            val uri = Uri.parse("https://shopee.co.id/product/90470305/2173970068") // Gantilah URL dengan URL produk Tokopedia yang sesuai
+            val intent = Intent(Intent.ACTION_VIEW, uri)
+            startActivity(intent)
+        }
+
         return binding.root
     }
 
@@ -128,12 +187,13 @@ class BerandaFragment : Fragment() {
                 true
             }
             R.id.action_profile -> {
-                Toast.makeText(requireContext(), "Profile", Toast.LENGTH_SHORT).show()
+                startActivity(Intent(requireContext(), Profile::class.java))
                 true
             }
             else -> super.onOptionsItemSelected(item)
         }
     }
+
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         inflater.inflate(R.menu.toolbar_menu, menu)
