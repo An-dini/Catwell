@@ -14,6 +14,15 @@
         android:theme="@style/Theme.Catwell"
         tools:targetApi="31">
         <activity
+            android:name=".WishListku"
+            android:exported="false" />
+        <activity
+            android:name=".HalamanProduk"
+            android:exported="false" />
+        <activity
+            android:name=".Reply_Diskusi"
+            android:exported="false" />
+        <activity
             android:name=".Bookmark"
             android:exported="false" />
         <activity

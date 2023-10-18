@@ -13,7 +13,7 @@
         android:id="@+id/action_bookmark"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:icon="@drawable/img_bookmark"
+        android:icon="@drawable/img_bookmark_stroke_white"
         android:title="bookamrk"
         app:showAsAction="always" />
     <item
@@ -23,4 +23,8 @@
         android:icon="@drawable/profile"
         android:title="profile"
         app:showAsAction="always" />
+
+    <item
+        android:id="@+id/produk1"
+        android:title="Rekomendasi Produk 1" />
 </menu>

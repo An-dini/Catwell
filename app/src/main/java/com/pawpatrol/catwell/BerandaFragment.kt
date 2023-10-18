@@ -5,6 +5,7 @@ import android.graphics.Typeface
 import android.os.Build
 import android.os.Bundle
 import android.text.Html
+import android.util.LayoutDirection
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.Menu
@@ -129,6 +130,10 @@ class BerandaFragment : Fragment() {
             }
             R.id.action_profile -> {
                 Toast.makeText(requireContext(), "Profile", Toast.LENGTH_SHORT).show()
+                true
+            }
+            R.id.produk1 -> {
+                startActivity(Intent(requireContext(), HalamanProduk::class.java))
                 true
             }
             else -> super.onOptionsItemSelected(item)

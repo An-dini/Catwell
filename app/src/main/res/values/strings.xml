@@ -134,4 +134,6 @@
         <item>5</item>
         <item>5</item>
     </string-array>
+
+    <string name="list_diskusi">RecylerViewYT</string>
 </resources>
