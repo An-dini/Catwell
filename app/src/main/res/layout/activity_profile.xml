@@ -53,6 +53,7 @@
                 android:textSize="17sp" />
 
         <TextView
+            android:id="@+id/almt_rumah"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="15dp"
@@ -72,6 +73,7 @@
             android:background="@color/SecondaryColor"/>
 
         <TextView
+            android:id="@+id/edt_pass"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:fontFamily="@font/poppinsregular"
@@ -92,6 +94,7 @@
             android:background="@color/SecondaryColor"/>
 
         <TextView
+            android:id="@+id/logout"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:backgroundTint="@color/white"
@@ -129,6 +132,7 @@
             android:background="@color/SecondaryColor"/>
 
         <TextView
+            android:id="@+id/hps_akn"
             android:drawableEnd="@drawable/delete"
             android:layout_width="match_parent"
             android:layout_height="50dp"
