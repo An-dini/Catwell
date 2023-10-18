@@ -14,12 +14,18 @@
         android:theme="@style/Theme.Catwell"
         tools:targetApi="31">
         <activity
+            android:name=".Logout"
+            android:exported="false" />
+        <activity
+            android:name=".HapusAkun"
+            android:exported="false" />
+        <activity
             android:name=".EditAddressActivity"
             android:exported="false" />
         <activity
             android:name=".AddressListActivity"
             android:exported="false" />
-      <activity
+        <activity
             android:name=".SplashActivity"
             android:exported="false" />
         <activity
@@ -51,7 +57,6 @@
             android:exported="false" /> <!-- <activity -->
         <!-- android:name=".ImageSlider" -->
         <!-- android:exported="false" /> -->
-
         <activity
             android:name=".PaymentActivity"
             android:exported="false" />
