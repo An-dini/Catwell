@@ -120,6 +120,9 @@
         <item>5</item>
     </string-array>
 
+<!--<<<<<<< HEAD-->
+    <string name="list_diskusi">RecylerViewYT</string>
+=======
     <!--    data address-->
     <string-array name="place_name">
         <item>Rumah</item>
@@ -178,4 +181,5 @@
     </string-array>
 
 
+>>>>>>> 3b23959631740ebe588a1b152a0e654fe29a013f
 </resources>

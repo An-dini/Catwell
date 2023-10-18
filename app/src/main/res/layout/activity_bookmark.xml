@@ -25,6 +25,64 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/imgIcon"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:padding="6dp"
+                android:src="@drawable/userprofile2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.044"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.049" />
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="296dp"
+                android:layout_height="wrap_content"
+                android:text="Tolong review nya dong untuk wet food merek ini, buat kittens aku yang umurnya 3 bulan. Thank you!"
+                android:textColor="@color/black"
+                android:textSize="14dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.426"
+                app:layout_constraintStart_toEndOf="@+id/imgIcon"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.049" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="140dp"
+                android:layout_height="92dp"
+                android:src="@drawable/imgdiscuss1"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.295"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+                app:layout_constraintVertical_bias="0.028" />
+
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="92dp"
+                android:src="@drawable/imgdiscuss2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.313"
+                app:layout_constraintStart_toEndOf="@+id/imageView2"
+                app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+                app:layout_constraintVertical_bias="0.028" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
 
 
 
