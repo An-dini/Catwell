@@ -7,39 +7,36 @@
     android:background="@drawable/base_orange"
     android:padding="16dp">
 
-
     <ImageButton
         android:id="@+id/btPrev"
-        android:layout_width="25dp"
-        android:layout_height="25dp"
-        android:layout_marginStart="4dp"
-        android:layout_marginTop="4dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
         android:background="@android:color/transparent"
         android:src="@drawable/ic_left"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+
     <TextView
         android:id="@+id/tvTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:text="Bookmark"
+        android:text="Rekomendasi Produk"
         android:textColor="@color/white"
         android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/btPrev"
-        tools:layout_editor_absoluteY="-1dp" />
+        tools:layout_editor_absoluteY="-2dp" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:text="Info bookmark mu ada disini"
+        android:text="Direkomedasikan untuk anabul"
         android:textColor="@color/white"
         android:textSize="14sp"
         android:textStyle="italic"
         app:layout_constraintStart_toEndOf="@+id/btPrev"
         app:layout_constraintTop_toBottomOf="@+id/tvTitle" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
