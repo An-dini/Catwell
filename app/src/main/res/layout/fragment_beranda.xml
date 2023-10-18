@@ -108,7 +108,8 @@
                             android:layout_width="150dp"
                             android:layout_height="100dp"
                             android:layout_marginRight="17dp"
-                            android:src="@drawable/article_1">
+                            android:src="@drawable/article_1"
+                            android:clickable="true">
                         </ImageView>
 
                         <ImageView
@@ -116,7 +117,8 @@
                             android:layout_width="150dp"
                             android:layout_height="100dp"
                             android:layout_marginRight="17dp"
-                            android:src="@drawable/article_2">
+                            android:src="@drawable/article_2"
+                            android:clickable="true">
                         </ImageView>
 
                         <ImageView
@@ -124,7 +126,8 @@
                             android:layout_width="150dp"
                             android:layout_height="100dp"
                             android:layout_marginRight="17dp"
-                            android:src="@drawable/article_3">
+                            android:src="@drawable/article_3"
+                            android:clickable="true">
                         </ImageView>
 
                         <ImageView
@@ -132,7 +135,8 @@
                             android:layout_width="150dp"
                             android:layout_height="100dp"
                             android:layout_marginRight="17dp"
-                            android:src="@drawable/article_4">
+                            android:src="@drawable/article_4"
+                            android:clickable="true">
                         </ImageView>
 
                         <ImageView
@@ -140,7 +144,8 @@
                             android:layout_width="150dp"
                             android:layout_height="100dp"
                             android:layout_marginRight="17dp"
-                            android:src="@drawable/article_5">
+                            android:src="@drawable/article_5"
+                            android:clickable="true">
                         </ImageView>
 
                         <ImageView
@@ -148,7 +153,8 @@
                             android:layout_width="150dp"
                             android:layout_height="100dp"
                             android:layout_marginRight="17dp"
-                            android:src="@drawable/article_6">
+                            android:src="@drawable/article_6"
+                            android:clickable="true">
                         </ImageView>
 
                         <ImageView
@@ -156,7 +162,8 @@
                             android:layout_width="150dp"
                             android:layout_height="100dp"
                             android:layout_marginRight="17dp"
-                            android:src="@drawable/article_7">
+                            android:src="@drawable/article_7"
+                            android:clickable="true">
                         </ImageView>
 
                     </LinearLayout>

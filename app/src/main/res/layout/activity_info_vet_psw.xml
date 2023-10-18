@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include
+        android:id="@+id/include"
+        layout="@layout/navtop_info_vet_psw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="72dp"
+        android:layout_marginBottom="50dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsregular"
+                android:text="Event Terbaru:"
+                android:textColor="@color/orange"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="20dp"/>
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/img_evn1"
+                        android:layout_width="170dp"
+                        android:layout_height="202dp"
+                        android:src="@drawable/even1"
+                        android:layout_margin="10dp"
+                        android:contentDescription="Description of the image or action" />
+
+                    <ImageButton
+                        android:id="@+id/img_evn2"
+                        android:layout_width="170dp"
+                        android:layout_height="202dp"
+                        android:src="@drawable/even2"
+                        android:layout_margin="10dp"
+                        android:contentDescription="Description of the image or action" />
+
+                </LinearLayout>
+
+
+            </HorizontalScrollView>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/orange"
+                android:layout_marginTop="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp"
+                android:gravity="center">
+                    <Button
+                        android:id="@+id/btn_vet"
+                        android:layout_width="140dp"
+                        android:layout_height="50dp"
+                        android:layout_marginEnd="20dp"
+                        android:text="Vet"
+                        android:fontFamily="@font/poppinsbold"
+                        android:backgroundTint="@color/orange"
+                        style="@style/ShapeAppearanceOverlay.Material3.Button"/>
+
+                    <Button
+                        android:id="@+id/btn_psw"
+                        android:layout_width="140dp"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="20dp"
+                        android:text="Puskeswan"
+                        android:fontFamily="@font/poppinsbold"
+                        android:backgroundTint="@color/orange"
+                        style="@style/ShapeAppearanceOverlay.Material3.Button"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/fragment_container_info"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/orange"
+                android:layout_gravity="bottom"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationBar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/bottom_nav_border"
+        app:menu="@menu/bottom_nav"
+        app:itemTextColor="@color/orange"
+        app:itemIconTint="@color/orange"
+        style="@style/AppBottomNavigation" />
+</androidx.constraintlayout.widget.ConstraintLayout>

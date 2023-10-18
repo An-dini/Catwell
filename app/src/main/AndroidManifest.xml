@@ -14,6 +14,7 @@
         android:theme="@style/Theme.Catwell"
         tools:targetApi="31">
         <activity
+<<<<<<< HEAD
             android:name=".WishListku"
             android:exported="false" />
         <activity
@@ -21,6 +22,42 @@
             android:exported="false" />
         <activity
             android:name=".Reply_Diskusi"
+=======
+            android:name=".Logout"
+            android:exported="false" />
+        <activity
+            android:name=".HapusAkun"
+>>>>>>> 267aa1d339478fe6b87ddf7d998995fc0827355b
+            android:exported="false" />
+        <activity
+            android:name=".EditAddressActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddressListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Detail_Event"
+            android:exported="false" />
+        <activity
+            android:name=".DetailArtikel"
+            android:exported="false" />
+        <activity
+            android:name=".Info_Vet_Psw"
+            android:exported="false" />
+        <activity
+            android:name=".OtpPassword"
+            android:exported="false" />
+        <activity
+            android:name=".EditProfile"
+            android:exported="false" />
+        <activity
+            android:name=".ForgotPassword"
+            android:exported="false" />
+        <activity
+            android:name=".EditPassword"
             android:exported="false" />
         <activity
 <<<<<<< refs/remotes/origin/beranda
@@ -52,22 +89,21 @@
             android:exported="false" />
         <activity
             android:name=".notifikasi"
-            android:exported="false" />
-        <activity
-            android:name=".ImageSlider"
-            android:exported="false" />
+            android:exported="false" /> <!-- <activity -->
+        <!-- android:name=".ImageSlider" -->
+        <!-- android:exported="false" /> -->
         <activity
             android:name=".PaymentActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Login"
             android:exported="false" />
         <activity
             android:name=".register"
             android:exported="false" />
         <activity
+            android:name=".ChatLogActivity"
+            android:exported="false" />
+        <activity
             android:name=".HistoryConsultationDetailActivity"
-            android:label="History Consultation Detail" />
+            android:exported="false" />
         <activity
             android:name=".ScheduleConsultationActivity"
             android:exported="false" />
@@ -78,7 +114,13 @@
             android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".SplashActivity"
+            android:name=".Detail_Vet_Psw"
+             android:exported="false" />
+      <activity
+            android:name=".Profile"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

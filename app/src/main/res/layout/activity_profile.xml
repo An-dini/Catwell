@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/white"
+    tools:context=".Profile">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/navtop_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="2dp" />
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="1000dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="72dp"
+        android:layout_marginBottom="50dp"
+        app:cardCornerRadius="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@color/white"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/fotoprofile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_below="@+id/include"
+                android:layout_marginTop="40dp"
+                android:src="@drawable/kucing" />
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/namaprofile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/fotoprofile"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppinsbold"
+                android:text="Bunga Citra lestari"
+                android:textColor="@color/PrimaryColor"
+                android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/almt_rumah"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/poppinsregular"
+            android:text="Alamat Rumah"
+            android:textAllCaps="false"
+            android:gravity="start"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:padding="10dp"
+            android:drawableEnd="@drawable/baseline_navigate_next_24"/>
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/SecondaryColor"/>
+
+        <TextView
+            android:id="@+id/edt_pass"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:fontFamily="@font/poppinsregular"
+            android:background="@drawable/border_text"
+            android:backgroundTint="@color/white"
+            android:text="Edit Password"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textAllCaps="false"
+            android:gravity="start"
+            android:textSize="16sp"
+            android:drawableEnd="@drawable/baseline_navigate_next_24"/>
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/SecondaryColor"/>
+
+        <TextView
+            android:id="@+id/logout"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/poppinsregular"
+            android:text="Logout"
+            android:textAllCaps="false"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:gravity="start"
+            android:textSize="16sp"
+            android:drawableEnd="@drawable/baseline_navigate_next_24"/>
+        <View
+            android:id="@+id/view3"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/SecondaryColor"/>
+
+        <TextView
+            android:id="@+id/edit_profile"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:backgroundTint="@color/white"
+            android:fontFamily="@font/poppinsregular"
+            android:text="Edit Profile"
+            android:textAllCaps="false"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:gravity="start"
+            android:textSize="16sp"
+            android:drawableEnd="@drawable/baseline_navigate_next_24"/>
+        <View
+            android:id="@+id/view4"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/SecondaryColor"/>
+
+        <TextView
+            android:id="@+id/hps_akn"
+            android:drawableEnd="@drawable/delete"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/border_text"
+            android:backgroundTint="@color/white"
+            android:outlineAmbientShadowColor="@color/SecondaryColor"
+            android:text="Hapus Akun"
+            android:paddingLeft="10dp"
+            android:padding="10dp"
+            android:textColor="@color/black"
+            android:textAllCaps="false"
+            android:gravity="start"
+            android:textSize="16sp"
+            android:fontFamily="@font/poppinsregular"/>
+
+        <View
+            android:id="@+id/view5"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/SecondaryColor"/>
+
+    </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
+

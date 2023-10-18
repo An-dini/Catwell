@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".DetailArtikel">
+
+    <include
+        android:id="@+id/include3"
+        layout="@layout/navtop_artikel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="72dp"
+        android:layout_marginBottom="50dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+        <androidx.appcompat.widget.SearchView
+            android:layout_width="254dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/search_view_bg"
+            android:layout_gravity="center_horizontal"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                
+                <TextView
+                    android:layout_width="250dp"
+                    android:layout_height="46dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="Cara Mengobati Kucing Luka Karena Berkelahi"
+                    android:textSize="15sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/poppinssemibold"
+                    android:gravity="center"/>
+
+                <ImageView
+                    android:id="@+id/img_artikel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/img_artikel"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"/>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/orange"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="20dp"
+                    android:text="Keterangan"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppinssemibold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="20dp"
+                    android:text="Masalah batas kekuasaan dan pasangan merupakan penyebab umum yang membuat kucing berkelahi. Apalagi kucing jantan yang belum disteril. Oleh karena itu, bila kucingmu termasuk kucing yang suka bermain di luar rumah dan berkelahi dengan kucing lain, PetLovers harus siap melakukan pertolongan pertama dan mengetahui cara mengobati infeksi luka pada kucing jika ia terluka."
+                    android:textSize="12sp"
+                    android:textStyle="normal"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppinsregular"/>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@color/orange"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="20dp"
+                    android:text="Gejala"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppinssemibold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginStart="20dp"
+                    android:text="Lebih dari 90% luka yang terinfeksi disebabkan oleh kucing yang berkelahi. Jika luka itu tidak tertangani dengan baik, akan menimbulkan infeksi karena kontaminasi bakteri. Infeksi tersebut kemudian akan menimbulkan demam pada kucing dan terkadang diikuti munculnya nanah pada area luka."
+                    android:textSize="12sp"
+                    android:textStyle="normal"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/poppinsregular"/>
+
+
+
+            </LinearLayout>
+            
+        </ScrollView>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/white"
+    tools:context=".EditProfile">
+    <include
+        android:id="@+id/include"
+        layout="@layout/navtop_edt_profile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="2dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="72dp"
+        app:cardCornerRadius="12dp"
+        app:cardBackgroundColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ExtraText">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/fotoprofile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/kucing" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/floatingActionButton2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/fotoprofile"
+                android:layout_alignBottom="@+id/fotoprofile"
+                android:layout_marginEnd="-13dp"
+                android:layout_marginBottom="-3dp"
+                android:clickable="true"
+                android:src="@drawable/camera"
+                android:backgroundTint="@color/transparan"/>
+            <TextView
+                android:id="@+id/txv1"
+                android:layout_width="325dp"
+                android:layout_height="20dp"
+                android:fontFamily="@font/poppinsbold"
+                android:layout_centerHorizontal="true"
+                android:text="Nama"
+                android:textColor="@color/black"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/floatingActionButton2"/>
+
+            <EditText
+                android:id="@+id/edtnama"
+                android:layout_width="325dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/border_text"
+                android:inputType="textPersonName"
+                android:layout_below="@id/txv1"/>
+
+            <TextView
+                android:id="@+id/txv2"
+                android:layout_width="326dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_below="@id/edtnama"
+                android:text="Email"
+                android:fontFamily="@font/poppinsbold"
+                android:textColor="@color/black"
+                android:layout_centerHorizontal="true"/>
+
+            <EditText
+                android:id="@+id/edt_email"
+                android:layout_width="325dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="5dp"
+                android:layout_below="@+id/txv2"
+                android:background="@drawable/border_text"
+                android:fontFamily="@font/poppinsregular"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:layout_centerHorizontal="true"/>
+
+            <TextView
+                android:id="@+id/txv3"
+                android:layout_width="325dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@id/edt_email"
+                android:text="No Handpone"
+                android:fontFamily="@font/poppinsbold"
+                android:textColor="@color/black" />
+
+            <EditText
+                android:layout_width="325dp"
+                android:layout_height="50dp"
+                android:background="@drawable/border_text"
+                android:layout_below="@id/txv3"
+                android:layout_centerHorizontal="true"
+                android:inputType="number"
+                android:paddingLeft="10dp"
+                android:textColor="@color/black"
+                android:layout_marginTop="5dp"
+                android:id="@+id/edt_nohp"
+                android:fontFamily="@font/poppinsregular"/>
+
+            <Button
+                android:id="@+id/btn_edt_profil"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_below="@id/edt_nohp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:width="250dp"
+                android:background="@drawable/button_shape"
+                android:backgroundTint="@color/SecondaryColor"
+                android:fontFamily="@font/poppinssemibold"
+                android:text="Simpan"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
+

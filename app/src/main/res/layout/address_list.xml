@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/clTransaction"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingStart="16dp"
+    android:paddingTop="16dp"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rumah"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:layout_marginStart="12dp"/>
+
+    <TextView
+        android:id="@+id/tvAddress"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginBottom="34dp"
+        android:text="Perum Neo City No. 127, Rt 013 Rw 013, Jawa Barat, Kota Bandung"
+        android:textColor="@color/black"
+        android:textSize="12dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvTitle"/>
+
+    <ImageView
+        android:id="@+id/imgEdit"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:padding="8dp"
+        android:layout_marginEnd="24dp"
+        android:src="@drawable/ic_pencil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <View
+        android:id="@+id/divider"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/orange"
+        app:layout_constraintTop_toBottomOf="@id/tvAddress"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
