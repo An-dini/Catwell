@@ -14,7 +14,7 @@
         android:theme="@style/Theme.Catwell"
         tools:targetApi="31">
         <activity
-<<<<<<< HEAD
+
             android:name=".WishListku"
             android:exported="false" />
         <activity
@@ -22,13 +22,15 @@
             android:exported="false" />
         <activity
             android:name=".Reply_Diskusi"
-=======
+            android:exported="false" />
+
+        <activity
             android:name=".Logout"
             android:exported="false" />
         <activity
             android:name=".HapusAkun"
->>>>>>> 267aa1d339478fe6b87ddf7d998995fc0827355b
             android:exported="false" />
+
         <activity
             android:name=".EditAddressActivity"
             android:exported="false" />

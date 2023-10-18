@@ -10,8 +10,12 @@ import android.view.MenuInflater
 import android.view.MenuItem
 import android.view.View
 import android.view.ViewGroup
+import com.pawpatrol.catwell.databinding.FragmentBerandaBinding
+import com.pawpatrol.catwell.databinding.FragmentDiskusiBinding
 
 class DiskusiFragment : Fragment() {
+
+    private lateinit var binding: FragmentDiskusiBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,18 +26,15 @@ class DiskusiFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_diskusi, container, false)
+
+        binding = FragmentDiskusiBinding.inflate(inflater, container, false)
+
+        binding.ivText2.setOnClickListener {
+            startActivity(Intent(requireContext(), Reply_Diskusi::class.java))
+        }
+
+        return binding.root
     }
 
-    override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        return when (item.itemId) {
-            R.id.iv_text2 -> {
-                startActivity(Intent(requireContext(), Reply_Diskusi::class.java)) //intent
-                true
-            }
-            else -> super.onOptionsItemSelected(item)
-        }
-    }
 
 }
