@@ -6,8 +6,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.ImageView
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.fragment.navArgs
+import com.pawpatrol.catwell.data.Transaction
+import com.pawpatrol.catwell.data.transactionList
 import com.pawpatrol.catwell.databinding.FragmentTransactionHistoryDetailBinding
 
 
@@ -27,6 +30,7 @@ class TransactionHistoryDetail : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         btNewSchedule = binding.btNewSchedule
         btConsultationHistory = binding.btConsultationHistory
+        var btBack: ImageView = binding.navbarUpper.btPrev
 
         val args: TransactionHistoryDetailArgs by navArgs()
         val transactionID = args.transactionId
@@ -37,7 +41,7 @@ class TransactionHistoryDetail : Fragment() {
             binding.instance.text = transaction.instance
             binding.date.text = transaction.date
             binding.time.text = transaction.time
-            binding.price.text = transaction.price
+            binding.price.text = transaction.price.toString()
             binding.ratingBar.rating = transaction.rating
         }
         btNewSchedule.setOnClickListener {
@@ -46,6 +50,11 @@ class TransactionHistoryDetail : Fragment() {
         btConsultationHistory.setOnClickListener {
             findNavController().navigate(R.id.transactionHistoryFragment)
         }
+
+        btBack.setOnClickListener {
+            getActivity()?.onBackPressed();
+        }
+
     }
     private fun getTransactionFromID(transactionID: Int): Transaction? {
         for(transaction in transactionList)

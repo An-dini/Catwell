@@ -3,6 +3,7 @@ package com.pawpatrol.catwell
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.pawpatrol.catwell.data.Doctor
 import com.pawpatrol.catwell.databinding.DoctorListItemBinding
 
 class DoctorListAdapter(private val doctors: List<Doctor>, private val clickListener: DoctorClickListener) :
