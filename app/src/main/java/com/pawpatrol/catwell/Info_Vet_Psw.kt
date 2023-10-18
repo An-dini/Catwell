@@ -23,30 +23,33 @@ class Info_Vet_Psw : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        imgbtn1 = findViewById(R.id.img_evn1)
-        imgbtn2 = findViewById(R.id.img_evn2)
+        binding = ActivityInfoVetPswBinding.inflate(layoutInflater)
+        setContentView(binding.root)
 
-        imgbtn1.setOnClickListener { val intent=Intent(this,Detail_Event::class.java)
-        startActivity(intent)
+        imgbtn1 = binding.imgEvn1
+        imgbtn2 = binding.imgEvn2
+
+        imgbtn1.setOnClickListener {
+            val intent=Intent(this,Detail_Event::class.java)
+            startActivity(intent)
         }
         imgbtn2.setOnClickListener {
             val intent = Intent(this, Detail_Event::class.java)
             startActivity(intent)
         }
 
-        binding = ActivityInfoVetPswBinding.inflate(layoutInflater)
-        setContentView(binding.root)
+        if (savedInstanceState == null) {
+            replaceFragment(VetFragment())
+        }
 
         binding.btnVet.setOnClickListener { replaceFragment(VetFragment()) }
         binding.btnPsw.setOnClickListener { replaceFragment(PswFragment()) }
-
     }
 
     private fun replaceFragment(fragment: Fragment) {
         val fragmentManager = supportFragmentManager
         val fragmentTransaction = fragmentManager.beginTransaction()
-        fragmentTransaction.replace(androidx.fragment.R.id.fragment_container_view_tag,fragment)
+        fragmentTransaction.replace(R.id.fragment_container_info, fragment)
         fragmentTransaction.commit()
-
     }
 }

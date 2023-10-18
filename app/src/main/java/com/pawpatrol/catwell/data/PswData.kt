@@ -1,4 +1,4 @@
-package com.example.infopswvet.Data
+package com.pawpatrol.catwell.data
 
 
 var pswlist = mutableListOf<VetData>()
@@ -8,4 +8,5 @@ data class PswData(
     val image: Int,
     val namapsw: String,
     val deskripsi: String,
+    val id: Int? = pswlist.size
 )

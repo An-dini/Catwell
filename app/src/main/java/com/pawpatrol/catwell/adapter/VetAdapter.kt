@@ -5,39 +5,31 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.pawpatrol.catwell.data.VetData
 import com.pawpatrol.catwell.databinding.ListVetBinding
-import java.util.ArrayList
 
 
-class VetAdapter(private val vetlist:List<VetData>, private val clickListener: VetClickListener) :
+class VetAdapter(private val vetlist: List<VetData>, private val clickListener: (VetData) -> Unit) :
     RecyclerView.Adapter<VetAdapter.ViewHolder>()
 {
     class ViewHolder(val binding: ListVetBinding) : RecyclerView.ViewHolder(binding.root)
 
-
-
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val binding = ListVetBinding.inflate(LayoutInflater.from(parent.context),parent, false)
+        val binding = ListVetBinding.inflate(LayoutInflater.from(parent.context), parent, false)
         return ViewHolder(binding)
     }
 
     override fun getItemCount(): Int = vetlist.size
 
-    override fun onBindViewHolder(holder: ViewHolder, position: Int)
-    {
-        with(holder){
-            with(vetlist[position]){
-               binding.imgVet.setImageResource(this.image)
-               binding.namaVet.text= this.namavet
-               binding.deskripsiVet.text= this.deskripsi
+    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+        with(holder) {
+            with(vetlist[position]) {
+                binding.imgVet.setImageResource(this.image)
+                binding.namaVet.text = this.namavet
+                binding.deskripsiVet.text = this.deskripsi
 
-                binding.cardView.setOnClickListener{
-                    clickListener.onClick(this)
+                binding.cardView.setOnClickListener {
+                    clickListener(this)
                 }
             }
         }
-    }interface VetClickListener
-{
-    fun onClick(vetdata: VetData)
-}
-
+    }
 }

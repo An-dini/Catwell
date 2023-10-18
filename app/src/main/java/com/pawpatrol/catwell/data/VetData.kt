@@ -7,5 +7,6 @@ data class VetData(
     val image: Int,
     val namavet: String,
     val deskripsi: String,
+    val id: Int? = vetList.size
 
 )
