@@ -3,8 +3,11 @@
     android:layout_width="290dp"
     android:layout_height="368dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_gravity="center"
-    android:padding="5dp">
+    android:background="@color/white"
+    android:padding="5dp"
+    tools:context=".HapusAkun">
 
     <TextView
         android:id="@+id/txtV_hapus_akun"
@@ -48,6 +51,7 @@
         android:layout_marginLeft="5dp"
         android:layout_marginRight="5dp">
         <Button
+            android:id="@+id/btYa"
             android:layout_width="100dp"
             android:layout_height="50dp"
             android:background="@drawable/button_shape"
@@ -55,6 +59,7 @@
             android:textColor="@color/white"
             android:text="Iya" />
         <Button
+            android:id="@+id/btTidak"
             android:layout_width="100dp"
             android:layout_height="50dp"
             android:background="@drawable/button_shape"

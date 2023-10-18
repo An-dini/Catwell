@@ -5,14 +5,7 @@
     android:layout_height="104dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/base_orange"
-    android:padding="16dp"><![CDATA[
-
-    " />
-
-
-
-
-    ]]>
+    android:padding="16dp">
 
     <ImageButton
         android:id="@+id/btPrev"

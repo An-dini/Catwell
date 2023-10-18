@@ -36,7 +36,7 @@ class PswFragment : Fragment() {
     private fun setupRecyclerView() {
         val pswDataList = generatePswDataList()
         adapter = PswAdapter(pswDataList) { pswData ->
-            val intent = Intent(requireContext(), DoctorDetailActivity::class.java)
+            val intent = Intent(requireContext(), Detail_Psw::class.java)
             intent.putExtra(PSW_ID_EXTRA, pswData.id)
             startActivity(intent)
         }
@@ -49,9 +49,9 @@ class PswFragment : Fragment() {
     private fun generatePswDataList(): List<PswData> {
         val pswDataList = mutableListOf<PswData>()
 
-        pswDataList.add(PswData(R.drawable.torovet, "Nama Dokter 1", "Deskripsi Dokter 1"))
-        pswDataList.add(PswData(R.drawable.bvc, "Nama Dokter 2", "Deskripsi Dokter 2"))
-        pswDataList.add(PswData(R.drawable.brunopetclinic, "Nama Dokter 3", "Deskripsi Dokter 3"))
+        pswDataList.add(PswData(R.drawable.pswbontang, "Puskeswan Bontang", "Alamat: Kota Bontang, Kalimantan Timur 75321, Kec. Bontang Bar., Gn. Telihan, Jl. Letjen S. Parman gang banjar No.rt 29"))
+        pswDataList.add(PswData(R.drawable.pswragunan, "Puskeswan Ragunan", "Alamat:Jl. Harsono RM No.28, RT.9/RW.4, Ragunan, Kec. Ps. Minggu, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12550, Indonesia"))
+        pswDataList.add(PswData(R.drawable.pswmagelang, "Puskeswan Magelang", "Alamat: Jl. Pahlawan No.8, Magelang, Magelang Tengah, Magelang City, Central Java 56116"))
 
         return pswDataList
     }
