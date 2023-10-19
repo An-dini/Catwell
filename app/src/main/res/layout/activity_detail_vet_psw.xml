@@ -15,8 +15,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_gravity="center"
+        app:cardBackgroundColor="@color/white"
         android:layout_marginTop="72dp"
-        android:layout_marginBottom="50dp"
         app:cardCornerRadius="12dp">
 
 <RelativeLayout
@@ -92,6 +92,7 @@
                 android:layout_marginStart="0dp"
                 android:drawableStart="@drawable/ic_lingkaran"
                 android:fontFamily="@font/poppinssemibold"
+                android:textColor="@color/black"
                 android:gravity="center"
                 android:text="Alamat Outlet"
                 android:textSize="14sp" />
@@ -99,6 +100,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Ruko taman Palem Lestari, Jl. Taman Palem Lestari No.23, RT.3/RW.13, Cengkareng Bar., Kecamatan Cengkareng, Kota Jakarta Barat, Daerah Khusus Ibukota Jakarta 11730"
+                android:textColor="@color/black"
                 android:paddingLeft="40dp"
                 android:fontFamily="@font/poppinsregular"/>
 
@@ -111,6 +113,7 @@
                 android:fontFamily="@font/poppinssemibold"
                 android:gravity="center"
                 android:text="Jam Operasional"
+                android:textColor="@color/black"
                 android:textSize="14sp" />
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -121,6 +124,7 @@
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/poppinsregular"
+                    android:textColor="@color/black"
                     android:paddingLeft="40dp"
                     android:text="Sabtu" />
 
@@ -128,6 +132,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="20dp"
+                    android:textColor="@color/black"
                     android:text="09.00–16.30" />
             </LinearLayout>
             <LinearLayout
@@ -139,11 +144,13 @@
                     android:layout_height="wrap_content"
                     android:text="Minggu"
                     android:paddingLeft="40dp"
+                    android:textColor="@color/black"
                     android:fontFamily="@font/poppinsregular"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="09.00–16.30"
+                    android:textColor="@color/black"
                     android:layout_marginLeft="20dp"/>
             </LinearLayout>
             <LinearLayout
@@ -156,11 +163,13 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/poppinsregular"
                     android:paddingLeft="40dp"
+                    android:textColor="@color/black"
                     android:text="Senin" />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="09.00–16.30"
+                    android:textColor="@color/black"
                     android:layout_marginLeft="20dp"/>
             </LinearLayout>
             <LinearLayout
@@ -172,11 +181,13 @@
                     android:layout_height="wrap_content"
                     android:text="Selasa"
                     android:paddingLeft="40dp"
+                    android:textColor="@color/black"
                     android:fontFamily="@font/poppinsregular"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="09.00–16.30"
+                    android:textColor="@color/black"
                     android:layout_marginLeft="20dp"/>
             </LinearLayout>
             <LinearLayout
@@ -188,11 +199,13 @@
                     android:layout_height="wrap_content"
                     android:text="Rabu"
                     android:paddingLeft="40dp"
+                    android:textColor="@color/black"
                     android:fontFamily="@font/poppinsregular"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="09.00–16.30"
+                    android:textColor="@color/black"
                     android:layout_marginLeft="20dp"/>
             </LinearLayout>
             <LinearLayout
@@ -204,11 +217,13 @@
                     android:layout_height="wrap_content"
                     android:text="Kamis"
                     android:paddingLeft="40dp"
+                    android:textColor="@color/black"
                     android:fontFamily="@font/poppinsregular"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="09.00–16.30"
+                    android:textColor="@color/black"
                     android:layout_marginLeft="20dp"/>
             </LinearLayout>
             <LinearLayout
@@ -219,12 +234,14 @@
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
                     android:text="Jumat"
+                    android:textColor="@color/black"
                     android:paddingLeft="40dp"
                     android:fontFamily="@font/poppinsregular"/>
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="09.00–16.30"
+                    android:textColor="@color/black"
                     android:layout_marginLeft="20dp"/>
             </LinearLayout>
 
@@ -233,6 +250,7 @@
                 android:layout_height="match_parent"
                 android:drawableStart="@drawable/ic_lingkaran"
                 android:layout_marginTop="10dp"
+                android:textColor="@color/black"
                 android:fontFamily="@font/poppinssemibold"
                 android:gravity="center"
                 android:text="Telepon"
@@ -241,13 +259,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="(021) 5560028"
+                android:textColor="@color/black"
                 android:paddingLeft="40dp"
                 android:fontFamily="@font/poppinsregular"/>
         </LinearLayout>
 
-
     </ScrollView>
-
 
 </RelativeLayout>
     </androidx.cardview.widget.CardView>

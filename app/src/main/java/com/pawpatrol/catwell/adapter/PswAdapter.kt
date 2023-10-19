@@ -25,7 +25,7 @@ class PswAdapter(private val pswlist: List<PswData>, private val clickListener: 
                 binding.namaVet.text = this.namapsw
                 binding.deskripsiVet.text = this.deskripsi
 
-                binding.cardView.setOnClickListener {
+                binding.layoutPsw.setOnClickListener {
                     clickListener(this)
                 }
             }

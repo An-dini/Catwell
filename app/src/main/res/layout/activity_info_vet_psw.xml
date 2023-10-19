@@ -16,7 +16,6 @@
         android:layout_height="match_parent"
         android:layout_gravity="center"
         android:layout_marginTop="72dp"
-        android:layout_marginBottom="50dp"
         app:cardBackgroundColor="@color/white"
         app:cardCornerRadius="12dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -87,6 +86,7 @@
                         android:layout_height="50dp"
                         android:layout_marginEnd="20dp"
                         android:text="Vet"
+                        android:textColor="@color/white"
                         android:fontFamily="@font/poppinsbold"
                         android:backgroundTint="@color/orange"
                         style="@style/ShapeAppearanceOverlay.Material3.Button"/>
@@ -97,11 +97,10 @@
                         android:layout_height="50dp"
                         android:layout_marginStart="20dp"
                         android:text="Puskeswan"
+                        android:textColor="@color/white"
                         android:fontFamily="@font/poppinsbold"
                         android:backgroundTint="@color/orange"
                         style="@style/ShapeAppearanceOverlay.Material3.Button"/>
-
-
             </LinearLayout>
 
             <LinearLayout
@@ -120,17 +119,4 @@
 
         </LinearLayout>
     </androidx.cardview.widget.CardView>
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottomNavigationBar"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        android:background="@drawable/bottom_nav_border"
-        app:menu="@menu/bottom_nav"
-        app:itemTextColor="@color/orange"
-        app:itemIconTint="@color/orange"
-        style="@style/AppBottomNavigation" />
 </androidx.constraintlayout.widget.ConstraintLayout>
