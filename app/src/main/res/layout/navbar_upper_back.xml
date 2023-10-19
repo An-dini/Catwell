@@ -4,7 +4,7 @@
     android:layout_height="104dp"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/base_orange"
-    android:paddingVertical="16dp">
+    android:padding="16dp">
 
     <ImageButton
         android:id="@+id/btPrev"
@@ -22,7 +22,7 @@
         android:text="Ayo berkonsultasi"
         android:textStyle="bold"
         android:textColor="@color/white"
-        android:textSize="20sp"
+        android:textSize="24sp"
         android:layout_marginStart="8dp"
         app:layout_constraintStart_toEndOf="@+id/btPrev"
         app:layout_constraintTop_toTopOf="parent"/>

@@ -26,7 +26,7 @@ class VetAdapter(private val vetlist: List<VetData>, private val clickListener: 
                 binding.namaVet.text = this.namavet
                 binding.deskripsiVet.text = this.deskripsi
 
-                binding.cardView.setOnClickListener {
+                binding.layoutVet.setOnClickListener {
                     clickListener(this)
                 }
             }

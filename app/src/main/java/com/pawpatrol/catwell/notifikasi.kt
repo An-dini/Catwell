@@ -2,6 +2,7 @@ package com.pawpatrol.catwell
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ImageView
 import androidx.recyclerview.widget.RecyclerView
 import com.pawpatrol.catwell.adapter.NotifikasiListAdapter
 import java.util.ArrayList
@@ -11,6 +12,12 @@ class notifikasi : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_notifikasi)
+
+        val backButton = findViewById(R.id.btPrev) as ImageView
+
+        backButton.setOnClickListener {
+            onBackPressed()
+        }
 
 
         val notif  = listOf<String>(

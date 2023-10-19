@@ -32,7 +32,7 @@
         android:layout_marginStart="8dp"
         android:text="Notifikasi"
         android:textColor="@color/white"
-        android:textSize="20sp"
+        android:textSize="24sp"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/btPrev"
         tools:layout_editor_absoluteY="3dp" />
